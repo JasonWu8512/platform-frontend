@@ -1,0 +1,44 @@
+/*  页面布局相关  */
+
+%flex-center-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+%flex-center-col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+%flex-between-center-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+%flex-between-top-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+%flex-left-center-row {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+%flex-left-top-row {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+%flex-end-stretch-row {
+  display: flex;
+  justify-content: flex-end;
+  align-items: stretch;
+}

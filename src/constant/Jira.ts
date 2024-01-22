@@ -1,0 +1,9 @@
+export enum sprintExceptions {
+  TARGETSTARTENDNULLEXCEPTION = '子任务起止时间不完整',
+  TARGETSTARTENDWRONGEXCEPTION = '子任务起止时间超过迭代时间',
+  BUGNOSPRINTEXCEPTION = 'Bug未关联Sprint',
+  STORYNOSUBTASKEXCEPTION = 'Story未拆子任务',
+  NOEPICSTORYEXCEPTION = 'Story未关联Epic',
+  NOCOMMONSTORYEXCEPTION = '通用型Story',
+  NOCOMMONEPICEXCEPTION = 'Epic问题'
+}

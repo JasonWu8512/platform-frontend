@@ -1,0 +1,28 @@
+$font-family: PingFangSC-Regular, PingFang SC, sans-serif;
+
+// 卡片标题
+%font-title {
+  font-family: $font-family;
+  height: 40px;
+  font-weight: 700;
+  @extend %font-16
+}
+
+// 默认字体
+%font-14 {
+  font-size: 14px;
+  font-family: $font-family
+}
+
+// 默认行高
+%line-height-24 {
+  line-height: 24px;
+}
+
+%font-16 {
+  font-size: 16px;
+}
+
+:export {
+  fontFamily: $font-family
+}

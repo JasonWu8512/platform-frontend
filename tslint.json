@@ -1,0 +1,15 @@
+{
+  "defaultSeverity": "warning",
+  "linterOptions": {
+    "exclude": ["**/node_modules/**", "./dist/**", "./build/**"]
+  },
+  "rules": {
+    "object-literal-shorthand": false,
+    "object-shorthand-properties-first": false,
+    "trailing-comma": [true, { "esSpecCompliant": true }],
+    "ordered-imports": true
+  },
+  "jsRules": {
+    "no-empty": true
+  }
+}

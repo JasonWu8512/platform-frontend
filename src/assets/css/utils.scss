@@ -1,0 +1,61 @@
+@import "font";
+// el-main padding距离
+$main-padding: 15px;
+// 侧边栏宽度
+$aside-width: 180px;
+// 侧边栏收缩宽度
+$aside-collapse-width: 62px;
+// 侧边栏用例树宽度
+$aside-tree-width: 250px;
+// 侧边栏收缩隐藏按钮位置
+$hidden-button-position: $aside-collapse-width + $aside-tree-width + $main-padding;
+// 侧边栏展开隐藏按钮位置
+$unfold-button-position: $aside-width + $aside-tree-width + $main-padding;
+// 首页头部高度
+$header-height: 50px;
+// 首页头部层级
+$header-z-index: 999;
+// 表单标题宽度
+$form-label-width: 120px;
+// 表单内容宽度
+$form-content-width: 205px;
+// 表格操作按钮宽度
+$table-1btn-width: 50px;
+$table-2btn-width: 90px;
+$table-3btn-width: 130px;
+$table-4btn-width: 170px;
+$table-5btn-width: 210px;
+// 表格时间宽度
+$table-time-width: 140px;
+
+// 搜索栏宽度
+$search-bar-width: 200px;
+
+// 功能卡片默认样式
+%el-card {
+  background: #FFFFFF;
+  box-shadow: 1px 2px 4px 0 rgba(55, 63, 81, 0.1);
+  border-radius: 4px;
+}
+
+// dialog默认title样式
+%dialog-title {
+  text-align: left;
+  @extend %font-14;
+  @extend %line-height-24;
+}
+
+:export {
+  asideWidth: $aside-width;
+  asideCollapseWidth: $aside-collapse-width;
+  hiddenButtonPosition: $hidden-button-position;
+  unfoldButtonPosition: $unfold-button-position;
+  formLabelWidth: $form-label-width;
+  formContentWidth: $form-content-width;
+  table1BtnWidth: $table-1btn-width;
+  table2BtnWidth: $table-2btn-width;
+  table3BtnWidth: $table-3btn-width;
+  table4BtnWidth: $table-4btn-width;
+  table5BtnWidth: $table-5btn-width;
+  tableTimeWidth: $table-time-width;
+}

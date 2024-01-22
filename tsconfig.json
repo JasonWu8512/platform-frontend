@@ -1,0 +1,158 @@
+{
+  "compilerOptions": {
+    "target": "es2017",
+    "module": "commonjs",
+    "removeComments": false,
+    "preserveConstEnums": true,
+    "moduleResolution": "node",
+    "experimentalDecorators": true,
+    "noImplicitAny": true,
+    "allowSyntheticDefaultImports": true,
+    "outDir": "lib",
+    "esModuleInterop": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "strictNullChecks": true,
+    "sourceMap": true,
+    "baseUrl": ".",
+    "rootDir": ".",
+    "allowJs": true,
+    "resolveJsonModule": true,
+    "typeRoots": [
+      "node_modules/@types",
+      "global.d.ts"
+    ],
+    "paths": {
+      "@/*": [
+        "src/*"
+      ]
+    },
+    "types": [
+      "node"
+    ],
+    "skipLibCheck": true
+  },
+  "exclude": [
+    "node_modules",
+    "dist",
+    ".env*"
+  ],
+  "compileOnSave": false
+}
+
+/***
+// 配置参考
+
+{
+  " compilerOptions ": {
+
+    // -----基本选项-----
+    "incremental": true,
+    // 启用增量编译
+    "target": "es6",
+    // 指定ECMAScript目标版本:'ES3'(默认),'ES5', 'ES2015', 'ES2016', 'ES2017', 'ES2018', 'ES2019'或'ESNEXT'
+    "module": "commonjs",
+    // 指定模块代码生成:'none', 'commonjs', 'amd', 'system', 'umd', 'es2015',或'ESNext'
+    "lib": [],
+    // 指定编译中包含的库文件
+    "allowJs": true,
+    // 允许javascript文件被编译
+    "checkJs": true,
+    // 报告错误在.js文件
+    "jsx": "react",
+    // 指定jsx代码生成:'preserve', 'react-native',或'react'
+    "declaration": true,
+    // 生成相应的'.d '.ts文件
+    "declarationMap": true,
+    // 为每个对应的'.d '生成一个sourcemap.ts文件
+    "sourceMap": true,
+    // 生成相应的'.地图的文件
+    "输出文件": "./",
+    // 连接并发出输出到单个文件
+    "outDir": "./build",
+    // 将输出结构重定向到目录
+    "rootDir": "./src",
+    // 指定输入文件的根目录.使用——outDir控制输出目录结构
+    "composite": true,
+    // 启用项目编译
+    "tsBuildInfoFile": "./",
+    // 指定存储增量编译信息的文件
+    "removeComments": true,
+    // 不发送注释输出
+    "noEmit": true,
+    // 不发送输出
+    "importHelpers": true,
+    //  Import emit helpers from 'tslib'
+    "downlevelIteration": true,
+    // 当针对'ES5'或'ES3'时,完全支持'for-of'、spread和destructuring中的可迭代对象
+    "isolatedModules": true,
+    // 将每个文件转换为一个单独的模块(类似于'ts.transpileModule')
+
+    // -----严格的类型检查选项-----
+    "strict": true,
+    // 启用所有严格类型检查选项
+    "noImplicitAny": true,
+    // 用隐含的'any'类型引发表达式和声明的错误
+    "strictNullChecks": true,
+    // 启用严格的null检查
+    "strictFunctionTypes": true,
+    // 启用严格检查函数类型
+    "strictBindCallApply": true,
+    // 在函数上启用严格的'bind', 'call'和'apply'方法
+    "strictPropertyInitialization": true,
+    // 启用严格检查类中的属性初始化
+    "noImplicitThis": true,
+    // 在'this'表达式上使用隐含的'any'类型引发错误
+    "alwaysStrict": true,
+    // 解析在strict模式下,并为每个源文件触发"use strict"
+
+    // -----额外检查-----
+    "noUnusedLocals": true,
+    // 报告未使用的局部变量的错误
+    "noUnusedParameters": true,
+    // 报告未使用参数的错误
+    "noImplicitReturns": true,
+    // 在函数中不是所有代码路径都返回值时报告错误
+    "noFallthroughCasesInSwitch": true,
+    // 在switch语句中报告fallthrough cases的错误
+
+    // -----模块解析选项-----
+    "moduleResolution": "node",
+    // 指定模块解析策略:'node' (node .js)或'classic' (TypeScript pre-1.6)
+    "baseUrl": "./src",
+    // 解析非绝对模块名的基本目录
+    "paths": {},
+    // 一系列的条目,这些条目将导入重映射到相对于'baseUrl'的查找位置
+    "rootDirs": [],
+    // 根文件夹的列表,它们的内容在运行时表示项目的结构
+    "typeRoots": [],
+    // 包含类型定义的文件夹列表
+    "types": [],
+    // 编译中包含的类型声明文件
+    "allowSyntheticDefaultImports": true,
+    // 允许从没有默认导出的模块中默认导入.这不会影响代码发出,只会类型化
+    "esModuleInterop": true,
+    // 通过为所有导入创建命名空间对象,启用CommonJS和ES模块之间的互操作性.意味着"allowSyntheticDefaultImports"
+    "preserveSymlinks": true,
+    // 不解析符号链接的实际路径
+    "allowUmdGlobalAccess": true,
+    // 允许从模块访问UMD全局变量
+
+    // -----源Map选项-----
+    "sourceRoot": "",
+    // 指定调试器应该定位TypeScript文件的位置,而不是源位置
+    "mapRoot": "",
+    // 指定调试器应该定位地图文件的位置,而不是生成的位置
+    "inlineSourceMap": true,
+    // 发出带有源映射的单个文件,而不是有单独的文件
+    "inlineSources": true,
+    // 在单个文件中沿着sourcemaps发出源;需要设置'——inlineSourceMap'或'——sourceMap'
+
+    // -----实验选项-----
+    "experimentalDecorators": true,
+    // 启用实验支持的ES7装饰器
+    "emitDecoratorMetadata": true
+    // 启用实验支持为decorator发送类型元数据
+  }
+}
+***/
